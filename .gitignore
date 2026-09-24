@@ -1,0 +1,22 @@
+# Real data must never leave the machine it was exported on.
+# These are the files this toolkit reads and writes in production.
+userlist*.csv
+created-accounts.csv
+*.log
+
+# The demo file is intentional, so it is re-included after the rules above.
+!examples/userlist-sample.csv
+
+# OS and editor noise
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# PowerShell
+*.ps1.bak
+*.ps1.orig
